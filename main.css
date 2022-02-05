@@ -1,0 +1,400 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: calibry, sans-serif;
+}
+
+
+.header {
+ width:auto;
+ margin: 0px auto;
+ border: 2px solid #ff0000;
+ border-bottom: 2px solid #ff0000;
+ background-color: rgba(52, 52, 52, 0.2);
+
+}
+
+.page {
+
+
+}
+.footer {
+
+
+}
+.column {
+  border: 2px solid black;
+  width: auto;
+  margin: 0px auto;
+
+}
+.page .column {
+  height: auto;
+  width: auto;
+
+}
+#main-menu {
+  display: flex;
+
+}
+#main-menu a {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  padding: 20px 0px;
+  text-decoration: none;
+  color: rgb(241, 18, 18);
+  transition: 250ms;
+
+}
+#main-menu a:hover,
+#main-menu a.active {
+  background: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.pocetnitekst {
+border: 1px solid red;
+  font-size: 30px;
+  background-color: #33333350;
+  color : white;
+  padding : 35px;
+
+}
+#pocetna {
+  text-align: center;
+  background: url('img/bg1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: calc(50vh - 280px);
+}
+#pocetna h1 {
+  font-size: 58pt;
+  font-weight: bold;
+
+}
+#o-jezeru {
+  background: url('img/bg2.jpg');
+  background-size: cover;
+  background-attachment: scroll;
+}
+#o-jezeru h2 {
+  padding-top: 20px;
+  font-size: 35pt;
+  text-align: center;
+}
+
+.kolone {
+  display: flex;
+}
+.karakteristike {
+  flex-grow: 1;
+  flex-basis: auto;
+}
+.opis {
+  flex-grow: 2;
+  flex-basis: auto;
+}
+.karakteristike label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 40px;
+  border: 1px solid white;
+  background-color:#ffffffc0;
+  border-radius: 10%;
+
+}
+.opis input {
+  display: none;
+}
+.opis .detalji {
+  display: none;
+}
+.opis input:checked+.detalji {
+  display: block;
+}
+.detalji {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  padding: 42px;
+  border: 1px solid white;
+  background-color:#ffffffc0;
+  text-align: center;
+  border-radius: 10%;
+
+}
+#lokacija h2 {
+  text-align: center;
+  font-size: 30pt;
+  padding-top: 20px;
+
+}
+#lokacija {
+  background-color: rgba(52, 52, 52, 0.2);
+}
+.slike img {
+  width: 300px;
+  height: 150px;
+  display: flex;
+}
+.slike p {
+  font-weight: bold;
+}
+.slike {
+  color: rgb(75, 75, 75);
+  font-size: 24px;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-around;
+}
+.slike > div {
+  position: relative;
+  width: 300px;
+  height: 150px;
+}
+.slike > div > img {
+  position: absolute;
+  top: 0px;
+  left: 0px
+  right: 0px;
+  bottom: 0px;
+}
+.slike > div > p {
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 5px;
+  background-color: #ffffffa2;
+  position: absolute;
+  text-align: center;
+  margin: 0px 0px;
+}
+.slike > div > p:hover{
+  background-color: red;
+  color:white;
+  transition-duration: 1s;
+  font-size: 30px;
+}
+.karakteristike label:hover,
+.karakteristike label.active {
+  background-color: red;
+  transition-duration: 1s;
+}
+#aktivnosti {
+  background: url('img/sss.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+#aktivnosti h3 {
+  text-align: center;
+  font-size: 40pt;
+}
+.tabela {
+  display: flex;
+}
+.tabela ul li {
+  font-size: 20px;
+  border: 1px solid white;
+  margin-top: 5px;
+  padding-top: 15px;
+  text-align: left;
+  background-color: #ffffffa1;
+  flex-grow: 1;
+  padding: 10px;
+}
+.tabela .drugi {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  flex-grow: 1;
+  margin-top: 0px;
+  margin-right: 15px;
+  padding-top: 15px;
+}
+.tabela .prvi {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  flex-grow: 1;
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 14px;
+}
+.tabela li {
+  margin-bottom: 10px;
+}
+.prvi p {
+  margin-bottom: -5px;
+}
+.drugi p {
+  margin-bottom: -5px;
+}
+.tabela ul li:hover {
+  color: white;
+  background-color:rgba(255, 0, 0, 0.5);
+  font-size: 30px;
+}
+#ribe {
+  background-color: rgba(52, 52, 52, 0.2);
+}
+#ribe h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.boss {
+  margin-top: 20px;
+  display: grid;
+  grid-template: "a b c"
+                 "d e f"
+                 "g h i";
+  align-content: space-around;
+  justify-content: space-around;
+}
+#riba-a {
+  grid-area: a;
+}
+#riba-b {
+  grid-area: b;
+}
+#riba-c {
+  grid-area: c;
+}
+#riba-d {
+  grid-area: d;
+}
+#riba-e {
+  grid-area: e;
+}
+#riba-f {
+  grid-area: f;
+}
+#riba-g {
+  grid-area: g;
+}
+#riba-h {
+  grid-area: h;
+}
+#riba-i {
+  grid-area: i;
+}
+.riba {
+  display: grid;
+  grid-template:"region";
+  align-content: stretch;
+  justify-content: stretch;
+  padding: 10px;
+}
+.riba img {
+  grid-area: region;
+  width: 250px;
+  height: 150px;
+  align-self: stretch;
+}
+.riba .text-holder {
+  grid-area: region;
+  align-self: stretch;
+  align-self: stretch;
+  opacity: 0;
+  text-align: left;
+  color: white;
+  transition: 200ms;
+}
+.riba .text-holder:hover {
+  opacity: 1;
+  font-weight: bold;
+  border: 1px solid white;
+}
+#linkovi h3 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+  padding: 10px;
+  color: red;
+}
+#linkovi {
+  background: url('img/bg9.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+#linkovi a {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  border-radius: 10%;
+  text-decoration: none;
+  padding: 10px;
+
+}
+#linkovi a:visited {
+  color: red;
+}
+#linkovi a:hover {
+  color: red;
+  font-size: 40px;
+  text-decoration: underline;
+}
+#linkovi a:active {
+  color: yellow;
+}
+#mita {
+  background-color: rgba(52, 52, 52, 0.2);
+  font-size: 30px;
+}
+#mita h3 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.region {
+  display: grid;
+  grid-template: "imed mapad"
+                 "maild mapad";
+  grid-template-columns= 300px 1fr;
+
+}
+.ime {
+  grid-area: imed;
+  margin: 50px;
+
+}
+.mail {
+  grid-area: maild;
+  margin: 50px;
+}
+.mapa {
+  grid-area: mapad;
+}
+.footer {
+  border-top: 2px solid red;
+  background-color: rgba(52, 52, 52, 0.2);
+}
+.footer > .column {
+  display:flex;
+}
+.footer .footer-column {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 25px;
+}
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+.do {
+  text-decoration: none;
+  color: red;
+}
+.do:hover {
+  text-decoration: underline;
+}
